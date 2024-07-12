@@ -1,0 +1,384 @@
+body {
+    margin: 0;
+    background-color: #e6c2df;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-image: url(/asset/img/bg.jpg);
+}
+
+.logo img {
+    width: 100px;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+}
+.nav-links li {
+    margin: 0 15px;
+}
+.nav-links a {
+    color: #5e5412;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.header-banner {
+    background-image: url(/asset/img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 70px 30px;
+}
+.header-banner h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #170505;
+}
+.header-banner p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.main-content h2 {
+    width: 100%; 
+    color: #2b260d; 
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    text-align: center;
+    align-items: stretch;
+}
+
+.product-card {
+    width: calc(20.20% - 20px);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 20px;
+    margin-bottom: 20px;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.08); 
+}
+
+.product-card h2 {
+    font-size: 18px;
+    color: #937f0d;
+    margin: 0; 
+    padding: 10px 0; 
+}
+
+.product-card p {
+    font-size: 15px;
+    color: #666;
+    margin: 10px 0 0 0; 
+    padding: 0; 
+    flex-grow: 1;
+}
+
+.product-card img {
+    max-width: 90%; 
+    border-radius: 8px;
+    margin-bottom: 10px; 
+}
+.about-us {
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 28px;
+    color: #4c521a;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    text-align: left;
+    font-size: 16px;
+    color: #666;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.order-now-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4c521a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.order-now-btn:hover {
+    background-color: #937f0d;
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 0;
+    background-image: url(/asset/img/bg.jpg);
+}
+
+.contact-container {
+    max-width: 500px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.contact-container h2 {
+    font-size: 2rem; 
+    color: #333333; 
+    text-align: center; 
+    margin-bottom: 30px; 
+}
+
+.contact-form {
+    display: grid;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+
+.submit-btn {
+    background-color:#ac579b; 
+    color: white;
+    padding: 12px 20px; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+.submit-btn:hover {
+    background-color: red; 
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 30px ;
+    color: #4c521a;
+}
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .main-content {
+        max-width: 90%; 
+        padding: 30px;
+     }
+    .container {
+        padding: 0 15px;
+    }
+    .product-card {
+        width: calc(45% - 20px);
+    }
+   }
+
+
+
+@media (max-width: 992px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .header-banner {
+        padding: 60px 20px;
+    }
+
+    .main-content {
+        padding: 30px 10px;
+    }
+
+    .product-card {
+        width: calc(25% - 20px);
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .nav-links li {
+        margin: 5px 0;
+    }
+
+    .header-banner h1 {
+        font-size: 36px;
+    }
+
+    .header-banner p {
+        font-size: 16px;
+    }
+
+    .main-content {
+        align-items: center;
+        margin: 30px;
+    }
+
+    .product-card img {
+        width: 60%;
+    }
+
+     .about-us {
+        background-image: url(/asset/img/bg.jpg);
+     }
+
+    
+    .about-content p {
+        flex-direction: column;
+        color: #121109;
+        font-style: italic;
+    }
+
+    .order-now-btn {
+        padding: 8px 16px;
+    }
+
+    .contact-section {
+        padding: 60px 10px;
+    }
+
+    .contact-container {
+        padding: 20px;
+    }
+    .product-card {
+            width: calc(100% - 20px);
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+    #name,
+    #email,
+    #message {
+        width: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .header-banner h1 {
+        font-size: 28px;
+    }
+
+    .header-banner p {
+        font-size: 14px;
+    }
+
+    .main-content {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 5px;
+    }
+
+    .product-card {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .about-us {
+        padding: 40px 5px;
+    }
+
+    .about-text {
+        font-size: 14px;
+    }
+
+    .about-image {
+        margin-top: 20px;
+    }
+
+    .order-now-btn {
+        font-size: 14px;
+    }
+
+    .contact-section {
+        padding: 40px 5px;
+    }
+
+    .contact-container {
+        padding: 15px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
